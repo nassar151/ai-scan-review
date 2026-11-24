@@ -1,0 +1,34 @@
+/* Aerocraft utilities (bear-*) ship prebuilt in Bear UI's stylesheet, imported in main.tsx. */
+
+/* App shell: Bear UI styles its components but not the page itself. */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-color: var(--bear-border-default);
+}
+
+body {
+  margin: 0;
+  background: var(--bear-bg-secondary);
+  color: var(--bear-text-primary);
+  font-family: var(--bear-font-sans);
+}
+
+/* Bear's stylesheet quotes the generic families ("monospace", "sans-serif"), which disables the fallback. */
+.bear-font-mono {
+  font-family: var(--bear-font-mono);
+}
+
+.bear-font-sans {
+  font-family: var(--bear-font-sans);
+}
+
+/* Zero-specificity reset so Aerocraft spacing utilities always win. */
+:where(h1, h2, h3, h4, h5, h6, p, ol, ul) {
+  margin: 0;
+}
+
+:where(ol, ul) {
+  padding: 0;
+}

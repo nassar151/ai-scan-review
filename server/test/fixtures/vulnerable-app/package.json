@@ -1,0 +1,15 @@
+{
+  "name": "vulnerable-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable fixture used by the scanner integration tests. Never deploy.",
+  "dependencies": {
+    "express": "4.16.0",
+    "lodash": "4.17.15",
+    "jsonwebtoken": "8.5.0",
+    "pg": "8.7.1"
+  },
+  "devDependencies": {
+    "mocha": "6.2.0"
+  }
+}
